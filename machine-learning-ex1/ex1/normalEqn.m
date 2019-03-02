@@ -11,7 +11,9 @@ theta = zeros(size(X, 2), 1);
 %
 
 % ---------------------- Sample Solution ----------------------
-
+m= length(y)
+X_ = [ones(m, 1),X]
+theta = pinv(X'*X)*X'*y
 
 
 
