@@ -17,7 +17,9 @@ sim = 0;
 %
 
 
+distance = sum((x1 - x2).^ 2);
 
+sim = e^(- distance / (2 * sigma^2));
 
 
 
